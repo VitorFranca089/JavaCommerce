@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexao {
+	
     private final String bd;
     private final String usuario;
     private final String senha;
@@ -17,7 +18,7 @@ public class Conexao {
         connection = null;
     }    
 
-    public Connection estabeleceConexao() {
+    public Connection conectar() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(bd,usuario, senha);

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Registo de Produto</title>
+<title>Registro de Produto</title>
 <style>
     /* Um estilo CSS simples para organizar o formulário no ecrã */
     
@@ -28,7 +28,7 @@
 <div class="container">
     <h2>Registo de Produto</h2>
     
-    <form action="SalvarProdutoServlet" method="POST">
+    <form name="frm" action="ProdutoController?op=1" method="POST">
     
         <div class="form-group">
             <label for="nome">Nome do Produto:</label>
@@ -36,8 +36,8 @@
         </div>
         
         <div class="form-group">
-            <label for="valor">Valor Unitário (R$):</label>
-            <input type="number" id="valor" name="valorUnitario" step="0.01" min="0" required placeholder="0.00">
+            <label for="valoruni">Valor Unitário (R$):</label>
+            <input type="number" id="valoruni" name="valoruni" step="0.01" min="0" required placeholder="0.00">
         </div>
         
         <div class="form-group">

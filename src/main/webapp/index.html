@@ -3,19 +3,113 @@
 <head>
 <meta charset="UTF-8">
 <title>JavaCommerce</title>
+
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: linear-gradient(135deg, #f4f4f9, #e9ecef);
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 80px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+        color: #333;
+        font-size: 32px;
+    }
+
+    .menu {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+
+        background: white;
+        padding: 25px;
+
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+        transition: 0.2s ease-in-out;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card a {
+
+        text-decoration: none;
+        color: #fff;
+
+        display: inline-block;
+        margin-top: 15px;
+
+        padding: 10px 15px;
+        border-radius: 8px;
+
+        background-color: #007bff;
+        font-weight: bold;
+    }
+
+    .card a:hover {
+        background-color: #0056b3;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        color: #777;
+        margin-top: 5px;
+    }
+
+</style>
+
 </head>
+
 <body>
-	<h1>Bem vindo ao JavaCommerce!</h1>
-	<ul>
-		<li>
-			<a href="CadastroUsuario.jsp">Cadastrar Usuário</a>
-		</li>
-		<li>
-			<a href="CadastroProduto.jsp">Cadastrar Produto</a>
-		</li>
-		<li>
-			<a href="CadastroCarrinho.jsp">Carrinho</a>
-		</li>
-	</ul>
+
+<div class="container">
+
+    <h1>Bem-vindo ao JavaCommerce 🚀</h1>
+
+    <div class="menu">
+
+        <div class="card">
+            <div class="title">Usuários</div>
+            <div class="subtitle">Gerencie clientes do sistema</div>
+            <a href="CadastroUsuario.jsp">Acessar</a>
+        </div>
+
+        <div class="card">
+            <div class="title">Produtos</div>
+            <div class="subtitle">Cadastro e controle de produtos</div>
+            <a href="CadastroProduto.jsp">Acessar</a>
+        </div>
+
+        <div class="card">
+            <div class="title">Pedidos</div>
+            <div class="subtitle">Criar e gerenciar pedidos</div>
+            <a href="PedidoController?op=1">Acessar</a>
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>
